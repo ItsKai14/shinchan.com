@@ -136,7 +136,7 @@ small {
 	transform: translateY(-100%);
 }
 
-@media only screen and (max-width: 1072px){
+@media only screen and (max-width: 1520px){
 	.content {
 		width: 20%;
 		position: relative;
@@ -154,6 +154,7 @@ small {
 	.content {
 		width: 100%;
 		position: relative;
+		left: 45px;
 	}
 	small{
 		font-size: 20px;
