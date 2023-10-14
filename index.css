@@ -148,7 +148,7 @@ small {
 	}
 }
 
-@media only screen and (mix-width: 720px){
+@media only screen and (max-width: 720px){
 
 	/* Medium screen styles */
 	.content {
