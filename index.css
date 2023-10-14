@@ -136,7 +136,7 @@ small {
 	transform: translateY(-100%);
 }
 
-@media only screen and (max-width: 1520px){
+@media only screen and (max-width: 1559px){
 	.content {
 		width: 20%;
 		position: relative;
@@ -148,7 +148,7 @@ small {
 	}
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 755px){
 
 	/* Medium screen styles */
 	.content {
