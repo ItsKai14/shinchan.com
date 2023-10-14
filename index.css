@@ -1,55 +1,65 @@
 /* In CSS, Asterisk(*) is a universal selecter */
 /* Here I used Universal Selector for background image */
-*{
-	margin: 0; 
+* {
+	margin: 0;
 	padding: 0;
 }
+
 /* For main content display <div> along with saperate formatting for logo <h1> and contact <button> element */
-.rero{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/background.jpeg	);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
+.rero {
+	width: 100%;
+	height: 100vh;
+	background-image: url(./images/background.jpeg	);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.1);
 }
-.logo{
+
+.logo {
 	font-size: 50px;
 	cursor: pointer;
 	color: #ccffff;
 	position: relative;
-	left: -60px;
-}	
-.cont{
-	position: relative;
-	right: -20px;
+	left: 10px;
 }
+
+.cont {
+	position: relative;
+	right: 10px;
+}
+
 /* fully edited text and image <a> (anchor) elements */
-a{
+a {
 	text-decoration: none;
 }
-a:visited{
+
+a:visited {
 	color: #ccffff;
 }
-a:active{
+
+a:active {
 	color: #ccffff;
 }
-a:hover{
+
+a:hover {
 	color: #ccffff;
 }
+
 /* For logo <img> and head <h1> element */
-.head{
+.head {
 	margin: auto;
-	width: 85%;
-	height: 15%;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+
 /* For all the buttons available along with the color property after hovering the button */
-button{
+button {
 	color: #fbfcfd;
 	padding: 10px 25px;
 	background: transparent;
@@ -58,101 +68,118 @@ button{
 	outline: none;
 	cursor: pointer;
 }
-button:hover{
+
+button:hover {
 	background-color: black;
 	color: cyan;
 }
+
 /* For main content of the web page along with saperate formatting for <h1> and <small> element text */
-.content{
+.content {
 	color: #fbfcfd;
 	position: absolute;
 	top: 65%;
 	left: 60%;
 	transform: translateY(-50%);
 	z-index: 2;
-	
+
 }
-.txt{
+
+.txt {
 	font-size: 80px;
 	margin: 10px o 30px;
-	line-height:80px;
+	line-height: 80px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	color: #ccffff;
 }
-small{
+
+small {
 	font-size: 30px;
 
 }
+
 /* For content of sidebar along with saperate formatting for follow <h1> elements as well as .smlinks class of <div> element and <ima> element */
-.sidebar{
+.sidebar {
 	width: 50px;
-	height: 100vh;
+	height: 93%;
 	position: absolute;
-    right: 0;
-	top: 0;
-	background: rgba(0,0,0,0.3);
+	right: 0;
+	top: 60px;
+	background: rgba(0, 0, 0, 0.3);
 }
-.follow{
+
+.follow {
 	color: #ccffff;
 	cursor: pointer;
 }
-.smlinks img{
+
+.smlinks img {
 	width: 25px;
 	margin: 5px auto;
 	cursor: pointer;
 }
-.smlinks{
+
+.smlinks {
 	width: 50px;
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
+
 /* For ending <footer> element (not currectly written yet) */
-.end{
+.end {
 	font-size: 20px;
 	color: #ccffff;
 	text-align: center;
 	transform: translateY(-100%);
 }
-/* Code for responsive behaviour */
-@media screen and (max-width: 600px)
-{
-	.txt{
-		font-size: 45px;
-		line-height:50px;
+
+@media only screen and (max-width: 1072px){
+	.content {
+		width: 20%;
+		position: relative;
+		left: 75px;
+	}
+
+	.head{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.content{
+		width: 80%;
 	}
 	small{
-		font-size: 18px;
+		font-size: 20px;
 	}
+	.txt{
+		font-size: 60px;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+	/* Medium screen styles */
+	.content {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+
+	/* Wide screen styles */
+	.content {
+		width: 40%;
+	}
+
+}
+@media only screen and (min-width: 1072px) and (max-width: 1080px){
 	.content{
+		width: 20%;
 		position: relative;
-		left: 10px;
-		top: 400px;
-	}
-	.head{
-		position: relative;
-		bottom: -135px;
-		left: -30px;
-		justify-content: space-between;
-	}
-	.logo{
-		font-size: 36px;
-		position: relative;
-		left: 10px;
-		color: #ccffff;
-	}
-	.rero{
-		width: 100%;
-		height: 100vh;
-		background-image: url(./images/WebSite\ Phone\ background.jpg);
-		background-size: cover;
-		background-position: center;
-		position: relative;
-		overflow: hidden;
-	}
-	.cont{
-		color: aqua;
+		right: -50px;
 	}
 }
