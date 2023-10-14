@@ -148,23 +148,17 @@ small {
 	}
 }
 
-@media only screen and (max-width: 768px) {
-	.content{
-		width: 80%;
+@media only screen and (mix-width: 720px){
+
+	/* Medium screen styles */
+	.content {
+		width: 60%;
 	}
 	small{
 		font-size: 20px;
 	}
 	.txt{
 		font-size: 60px;
-	}
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-	/* Medium screen styles */
-	.content {
-		width: 60%;
 	}
 }
 
@@ -181,5 +175,20 @@ small {
 		width: 20%;
 		position: relative;
 		right: -50px;
+	}
+}
+
+@media only screen and (max-width: 438px){
+	.content{
+		width: 80%;
+	}
+	small{
+		font-size: 18px;
+	}
+	.txt{
+		font-size: 50px;
+	}
+	.logo{
+		font-size: 30px;
 	}
 }
