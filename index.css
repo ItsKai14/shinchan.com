@@ -140,7 +140,7 @@ small {
 	.content {
 		width: 20%;
 		position: relative;
-		left: 75px;
+		left: 45px;
 	}
 
 	.head{
@@ -152,7 +152,8 @@ small {
 
 	/* Medium screen styles */
 	.content {
-		width: 60%;
+		width: 100%;
+		position: relative;
 	}
 	small{
 		font-size: 20px;
